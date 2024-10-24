@@ -1,0 +1,116 @@
+[
+  {
+    "challenge": {
+      "name": "Crontab Conundrum",
+      "description": "Using `185-oh-my-lord`, I tried scheduling my morning coffee in crontab, but it seems like I've scheduled a flag instead! Can you find it?",
+      "category": "Docker CTF",
+      "value": 35,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{hidden_in_crontab}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the crontab entries; they can hold more than just schedules!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Suspicious User Snoop",
+      "description": "Using `185-oh-my-lord`, I found a user suspicious user in the system... sounds like a spy! What's he hiding?",
+      "category": "Docker CTF",
+      "value": 25,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{hidden_in_passwd}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check `/etc/passwd` to find our furry friend and their secrets!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Logfile Mystery",
+      "description": "Using `185-oh-my-lord`, Logs tell tales, but this one’s hiding a flag! Can you sift through the secrets?",
+      "category": "Docker CTF",
+      "value": 30,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{hidden_in_logs}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Logs can be more revealing than gossip—dig in!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Persistent Process Puzzle",
+      "description": "Using `185-oh-my-lord`, There’s a mysterious background process running. Can you figure out what it’s up to and find the flag?",
+      "category": "Docker CTF",
+      "value": 35,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{whos_process_is_this}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the running processes—it might have something to say!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Using `185-oh-my-lord`, C Code Chaos",
+      "description": "Can you compile this C program and find the hidden flag? Don’t forget to keep your compiler handy!",
+      "category": "Docker CTF",
+      "value": 50,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{obfuscated_code}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "You’ll need to compile the code before running it. Try `gcc`!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Using `185-oh-my-lord`, Secret Environment",
+      "description": "There's a flag hiding in the environment variables! Can you find it without losing your sanity?",
+      "category": "Docker CTF",
+      "value": 25,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{hidden_in_env}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Environment variables can be sneaky. Don’t overlook them!",
+        "cost": 10
+      }
+    ]
+  }
+]

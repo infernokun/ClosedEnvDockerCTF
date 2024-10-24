@@ -1,0 +1,363 @@
+[
+  {
+    "challenge": {
+      "name": "Running Man",
+      "description": "How do you **start** a container from an image in Docker?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker run}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How does one 'run' a container?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "I NEED A LIST",
+      "description": "What command lists all running containers?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker ps}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How do you list linux processes?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "I NEED ALLLLLLL THEM",
+      "description": "I only see running containers... How do I also include stopped containers?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker ps -a}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How do you list moreeee linux processes?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Random Inspection",
+      "description": "Which command gives you detailed info on a container's configuration?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker inspect}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "inspector gadget?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Get it Out",
+      "description": "Which command do you use to delete a stopped container?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker rm}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How do you delete a file in linux?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Logs are Important",
+      "description": "How can you view the **logs** of a running container?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker logs}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "It's time to stop",
+      "description": "Which command **stops** a running container?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker stop}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How do you stop... a container?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Do you copy?",
+      "description": "How do you **copy** files from your system into a container?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker cp}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How do you copy files in linux?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Attachment Issues",
+      "description": "How can you **attach** your terminal to a container's process?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker attach}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Beta Build",
+      "description": "What command shows the Docker **version** installed?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker version}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Have you tried turning it off and on again?",
+      "description": "What command **restarts** a container?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker restart}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "From Scratch",
+      "description": "How can you create a Docker image from a Dockerfile?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker build}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Sharing is Caring",
+      "description": "How do you upload an image to Docker Hub?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker push}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Stealing is Caring",
+      "description": "Which command pulls an image from Docker Hub?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker pull}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "No more images pls",
+      "description": "What command removes a Docker image?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker rmi}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Like rm but for images...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Resource hog",
+      "description": "How can you display the resource usage of containers?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker stats}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Yummy filesystem",
+      "description": "How can you export a container's filesystem as a tar file?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker export}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Alright, I'm done",
+      "description": "How can you remove all unused data in Docker?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker system prune}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Account Issues",
+      "description": "Which command logs you into Docker Hub?",
+      "category": "Docker Commands",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker login}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Check the help page...",
+        "cost": 5
+      }
+    ]
+  }
+]

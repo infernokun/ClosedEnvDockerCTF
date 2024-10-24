@@ -1,0 +1,1 @@
+flag{the_cat_is_out_the_bag}

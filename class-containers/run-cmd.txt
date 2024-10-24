@@ -1,0 +1,101 @@
+docker run -d --name nginx-server -p 80:80 nginx:latest
+docker run -d --name mysql-server -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=testdb -p 3306:3306 mysql:latest
+docker run -d --name redis-server -p 6379:6379 redis:latest
+docker run -d --name postgres-server -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 postgres:latest
+docker run -d --name node-app -v ./app:/usr/src/app -w /usr/src/app node:latest npm start
+docker run -d --name python-script -v .:/usr/src/app -w /usr/src/app python:latest python script.py
+docker run -it --name alpine-shell alpine:latest /bin/sh
+docker run -d --name wordpress -e WORDPRESS_DB_HOST=mysql -e WORDPRESS_DB_USER=user -e WORDPRESS_DB_PASSWORD=password -p 8000:80 --link mysql-server:mysql wordpress:latest
+docker run -d --name mongo-server -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=password -p 27017:27017 mongo:latest
+docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+docker run -d --name grafana -p 3000:3000 grafana/grafana:latest
+docker run -d --name elasticsearch -e discovery.type=single-node -p 9200:9200 -p 9300:9300 elasticsearch:latest
+docker run -d --name nextcloud -p 8080:80 -v nextcloud_data:/var/www/html nextcloud:latest
+
+docker exec -it nginx-server nginx -v
+docker exec -it mysql-server mysql -u root -p
+docker exec -it redis-server redis-cli ping
+docker exec -it postgres-server psql -U postgres -d testdb -c 'SELECT version();'
+docker exec -it node-app npm install
+docker exec -it python-script python /usr/src/app/another_script.py
+docker exec -it alpine-shell apk update
+docker exec -it wordpress wp core version
+docker exec -it mongo-server mongo --username root --password password --eval 'db.adminCommand("ping");'
+docker exec -it jenkins /bin/bash -c "java -jar /usr/share/jenkins/jenkins.war --help"
+docker exec -it grafana grafana-cli -v
+docker exec -it elasticsearch curl -X GET "localhost:9200/"
+docker exec -it nextcloud php occ status
+
+docker run --user $RANDOM:$RANDOM hello-world
+
+# Run a new container with interactive terminal
+docker run -it ubuntu /bin/bash
+
+# Pull an image
+docker pull alpine:latest
+
+# List all running containers
+docker ps
+
+# List all containers (including stopped ones)
+docker ps -a
+
+# Stop a running container
+docker stop nginx-server
+
+# Remove a stopped container
+docker rm mysql-server
+
+# Remove an image
+docker rmi nginx:latest
+
+# Build an image from a Dockerfile
+docker build -t my-custom-image .
+
+# View logs for a specific container
+docker logs redis-server
+
+# Inspect a container to get detailed information
+docker inspect postgres-server
+
+# Check the resource usage of containers
+docker stats
+
+# Start a stopped container
+docker start mysql-server
+
+# Restart a running container
+docker restart redis-server
+
+# Create a volume
+docker volume create my-volume
+
+# List all volumes
+docker volume ls
+
+# Remove a volume
+docker volume rm my-volume
+
+# Create a network
+docker network create my-network
+
+# List all networks
+docker network ls
+
+# Remove a network
+docker network rm my-network
+
+# Save an image to a tar file
+docker save -o my-image.tar my-custom-image:latest
+
+# Load an image from a tar file
+docker load -i my-image.tar
+
+# Execute a command in a running container
+docker exec -it nginx-server curl http://localhost
+
+# Get the shell of a running container
+docker exec -it python-script /bin/bash
+
+# Run a one-off command in a new container
+docker run --rm busybox echo "Hello, World!"

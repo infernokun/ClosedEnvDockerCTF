@@ -1,0 +1,6 @@
+mongosh
+
+show dbs        // List all databases
+use mydb        // Switch to 'mydb' database (or create it if it doesn't exist)
+db.mycollection.insert({name: "John"}) // Insert a document into a collection
+db.mycollection.find() // Find all documents in 'mycollection'

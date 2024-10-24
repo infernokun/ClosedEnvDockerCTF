@@ -1,0 +1,179 @@
+[
+  {
+    "challenge": {
+      "name": "Basic Docker Compose 1",
+      "description": "What port is the nginx service container running on in the `docker-compose-nginx.yml` file?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{80}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Left is the host port, right is the container port.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Basic Docker Compose 2",
+      "description": "What port is the nginx service exposed on the localhost in the `docker-compose-nginx.yml` file?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{8080}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Left is the host port, right is the container port.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Composer",
+      "description": "Not sure why, but you must use docker compose to run the '185-i-am-a-composer' container. What is the flag?",
+      "category": "Docker Compose",
+      "value": 25,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{i_do_the_composing}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "How does one bring 'up' a container with compose?",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Volume Mounting 1",
+      "description": "If I run this `docker-compose-nginx.yml`, where will the files be stored on my machine?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{./html}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Left is the host volume, right is the container volume.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Volume Mounting 2",
+      "description": "If I run this `docker-compose-nginx.yml`, where will the files be stored in the container?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{/usr/share/nginx/html}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Left is the host volume, right is the container volume.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Compose This Image",
+      "description": "What image is being used in the `docker-compose-nginx.yml` file?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [
+      { "content": "flag{nginx:latest}" },
+      { "content": "flag{nginx}" }
+    ],
+    "hints": [
+      {
+        "type": "text",
+        "content": "look for the 'image' key in the service.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Name this!",
+      "description": "What will be the name of the container when you run the `docker-compose-nginx.yml` file?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{web}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "look for the 'container_name' key in the service.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "oh no my ip address",
+      "description": "What will be the ip address of the container when you run the `docker-compose-nginx.yml` file?",
+      "category": "Docker Compose",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{192.168.0.154}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "look for the 'networks' key in the service.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "File name matters?",
+      "description": "Since the file is named `docker-compose-nginx.yml`, how do i run it?",
+      "category": "Docker Compose",
+      "value": 20,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [
+      { "content": "flag{docker compose -f docker-compose-nginx.yml up}" },
+      { "content": "flag{docker-compose -f docker-compose-nginx.yml up -d}" }
+    ],
+    "hints": [
+      {
+        "type": "text",
+        "content": "look for the 'image' key in the service.",
+        "cost": 5
+      }
+    ]
+  }
+]

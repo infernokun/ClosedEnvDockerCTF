@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    container_name: web_server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web_data:/usr/share/nginx/html
+    networks:
+      - my_network
+
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: example_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - my_network
+
+  redis:
+    image: redis:latest
+    container_name: redis_cache
+    ports:
+      - "6379:6379"
+    networks:
+      - my_network
+
+  kali:
+    image: kalilinux/kali-rolling
+    container_name: kali_container
+    networks:
+      - my_network
+    volumes:
+      - ./kali_data:/data
+    ports:
+      - "2022:22"
+      - "4444:4444"
+
+  python-app:
+    image: python:3.9
+    container_name: python_app
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: python3 app.py
+    networks:
+      - my_network
+
+volumes:
+  db_data:
+  web_data:
+  kali_data:
+
+networks:
+  my_network:
+    driver: bridge
+

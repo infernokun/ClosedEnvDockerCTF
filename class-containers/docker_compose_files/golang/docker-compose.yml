@@ -1,0 +1,7 @@
+services:
+  golang:
+    image: golang:latest
+    working_dir: /go/src/app
+    volumes:
+      - ./go:/go/src/app
+    command: ["go", "run", "main.go"]

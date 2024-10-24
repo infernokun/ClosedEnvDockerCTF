@@ -1,0 +1,12 @@
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  python:
+    image: python:latest
+    working_dir: /app
+    volumes:
+      - ./python:/app
+    command: ["python", "app.py"]

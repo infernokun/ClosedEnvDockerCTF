@@ -1,0 +1,17 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    networks:
+      webnet:
+        ipv4_address: 192.168.0.154
+
+networks:
+  webnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.0.0/24

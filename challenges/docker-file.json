@@ -1,0 +1,176 @@
+[
+  {
+    "challenge": {
+      "name": "Base of Operations",
+      "description": "What is the base image used in this Dockerfile?",
+      "category": "Dockerfiles",
+      "value": 12,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{python:3.11-slim}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's a lightweight version of a popular programming language.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Workspace Wonders",
+      "description": "Which keyword sets the working directory in a Dockerfile?",
+      "category": "Dockerfiles",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{WORKDIR}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's the directory where the commands are run.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Dependency Dilemma",
+      "description": "Name a system dependencies that is installed in this Dockerfile?",
+      "category": "Dockerfiles",
+      "value": 14,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{gcc}" }, { "content": "flag{libpq-dev}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "One is a C compiler, the other is for PostgreSQL.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Clean Up Crew",
+      "description": "What does the command clans up the package cache?",
+      "category": "Dockerfiles",
+      "value": 12,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{apt-get clean}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It helps to reduce the image size.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Requirements Riddle",
+      "description": "Which keyword copies the requirements.txt file into the container?",
+      "category": "Dockerfiles",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{COPY}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It prepares for installing Python packages.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Installation Inspection",
+      "description": "qWhich command installs Python packages in this Dockerfile?",
+      "category": "Dockerfiles",
+      "value": 13,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [
+      { "content": "flag{pip install}" },
+      { "content": "flag{pip install --no-cache-dir -r requirements.txt}" }
+    ],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's about managing dependencies in Python.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "App Exposure",
+      "description": "What port is exposed by this Dockerfile?",
+      "category": "Dockerfiles",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{8000}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's often used by web applications.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Command Central",
+      "description": "What command is executed when the container starts?",
+      "category": "Dockerfiles",
+      "value": 12,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{python app.py}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's the entry point for the application.",
+        "cost": 5
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Living off the Environment",
+      "description": "Which keyword sets an environment variable in a Dockerfile?",
+      "category": "Dockerfiles",
+      "value": 10,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{ENV}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's used to set configuration values.",
+        "cost": 5
+      }
+    ]
+  }
+]

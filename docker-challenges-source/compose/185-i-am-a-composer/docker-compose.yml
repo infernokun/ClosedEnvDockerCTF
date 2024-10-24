@@ -1,0 +1,5 @@
+services:
+  185-i-am-a-composer:
+    image: 185-i-am-a-composer
+    environment:
+      - FLAG_VAR=flag

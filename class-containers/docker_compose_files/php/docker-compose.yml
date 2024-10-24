@@ -1,0 +1,8 @@
+services:
+  php:
+    image: php:latest
+    command: ["php", "-S", "0.0.0.0:8000"]
+    volumes:
+      - ./php:/var/www/html
+    ports:
+      - "8000:8000"

@@ -1,0 +1,4 @@
+*.log
+environment-containers/ctfd
+*.tar
+challenge-containers/

@@ -1,0 +1,192 @@
+[
+  {
+    "challenge": {
+      "name": "Container of Laughs",
+      "description": "What do you call an isolated environment in Docker?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{container}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's not a tin can, but it's close!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Image is Everything!",
+      "description": "What do you call the blueprint from which containers are created?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{image}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Think of it as a recipe for your container cake!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Network Shenanigans",
+      "description": "What is the term for a Docker communication channel?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{network}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's not a WiFi hotspot, but it helps containers talk!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Volume Control",
+      "description": "What do you call the filesystem storage mechanism for Docker containers?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{volume}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Not your Spotify playlist, but it holds data!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Docker Doorkeeper",
+      "description": "What do you call the system that manages Docker containers?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{daemon}" }, { "content": "flag{engine}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It’s not a ghost, but it manages everything!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Docker's Home Sweet Home",
+      "description": "What do we call the collection of images and containers managed by Docker?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{registry}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's like a library but for container recipes!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Portly Affair",
+      "description": "What is the term for exposing a container's services to the outside world?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{port}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Think of it as the container's front door!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Orchestrate This!",
+      "description": "What tool helps manage multiple containers in a Docker environment?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker compose}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's like a conductor leading an orchestra of containers!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Docker's Secret Sauce",
+      "description": "What is the term for the process of packaging an application and its dependencies into a container?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{containerization}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's like putting your app in a box!",
+        "cost": 3
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Docker Walmart",
+      "description": "Where can I find the docker images?",
+      "category": "Docker Basics",
+      "value": 8,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{docker hub}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "It's like a supermarket for Docker images!",
+        "cost": 3
+      }
+    ]
+  }
+]

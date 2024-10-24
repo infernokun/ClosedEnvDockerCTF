@@ -1,0 +1,211 @@
+[
+  {
+    "challenge": {
+      "name": "Loading...",
+      "description": "#Bahhhh..\n No one told me I had to 'load' the container `185-echo-flag` before I could run it. Can you help me out? Provide the `md5 hash` of the output.",
+      "category": "Docker Containers",
+      "value": 15,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{b6aa1f4791b393815283652c32756703}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "`docker load -i` the tar!!!!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Running Joke",
+      "description": "I can't get this container `185-echo-flag` to run. Can you help me out?",
+      "category": "Docker Containers",
+      "value": 20,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{i_used_docker_run}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "I think `docker run` is the command you're looking for.",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Saving for Later",
+      "description": "There is a container named `cyberchef` on a friend's machine (defender@10.0.0.254 pass 1down2down), but he want give it to me.. :( Can you me steal it? Pretty please? Provide the `md5 hash` of the container.",
+      "category": "Docker Containers",
+      "value": 20,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{0c367012f69799f89beba29b3916405d}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Maybe this will help: `docker save <container> -o <container>.tar`",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Secret Inspection",
+      "description": "There's a secret hidden in the container `185-echo-flag`... Can you 'inspect' it?",
+      "category": "Docker Containers",
+      "value": 20,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{i_used_docker_inspect}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Come on.. use `docker inspect`!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Stop It Meg!",
+      "description": "For some reason the flag only displays when the container `185-stop-it-meg`is stopped. Do what you must.",
+      "category": "Docker Containers",
+      "value": 20,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{i_stopped_the_container}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Have you tried `docker stop`?",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "i'M iN tHe CoNtAiNeR",
+      "description": "Using the `185-in-the-container` container, can you find the flag?",
+      "category": "Docker Containers",
+      "value": 25,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{execute_order_66}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "You might need to `exec` into the container. Get a shell!",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Access Denied",
+      "description": "Using the `185-let-me-in` container, can you find the flag?",
+      "category": "Docker Containers",
+      "value": 35,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{executive_root_access}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Have you checked the file's permissions?",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "The Flash",
+      "description": "I can't get the `/flag.txt` in the `185-you-thought` container!!!! You're my only hope.",
+      "category": "Docker Containers",
+      "value": 50,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{the_cat_is_out_the_bag}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Did you know you can run commands in a container without 'exec'ing into it?",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Star Wars",
+      "description": "I need to get the flag from the `185-star-wars` container, but I can't find it. It is on a different planet. The website is star wars themed...",
+      "category": "Docker Containers",
+      "value": 50,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{web_wars}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Something something something dark side... try using `-p` to map the port for a basic http server.",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "远程命令执行漏洞",
+      "description": "This container isn't doing anything... Can you try probing port `12345` for information? It is `185-always-listening`.",
+      "category": "Docker Containers",
+      "value": 50,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{in_your_walls}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "Use `-p` to map the port to your localhost. Then idk netcat is pretty cool.",
+        "cost": 10
+      }
+    ]
+  },
+  {
+    "challenge": {
+      "name": "Cyber Environment",
+      "description": "My container `185-set-variable` only displays the flag if the environment variable `FLAG_VAR` is set to be `flag`.",
+      "category": "Docker Containers",
+      "value": 50,
+      "type": "standard",
+      "max_attempts": 3,
+      "state": "visible"
+    },
+    "flags": [{ "content": "flag{in_my_environment}" }],
+    "hints": [
+      {
+        "type": "text",
+        "content": "`run -e` is for environment variables!",
+        "cost": 10
+      }
+    ]
+  }
+]
